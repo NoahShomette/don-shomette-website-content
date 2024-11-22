@@ -6,8 +6,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
   cancel-in-progress: true
 jobs:
-  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-  # process Blogs
   process:
     runs-on: ubuntu-latest
     steps:
@@ -21,7 +19,7 @@ jobs:
 
       # Process Classes
       - name: process classes
-        run:
+        run: |
 
       # Commits if anything new was changed
       - name: commit
