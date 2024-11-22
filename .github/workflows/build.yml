@@ -1,0 +1,37 @@
+name: Process Content
+on:
+  push:
+    branches: ["main"]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  # process Blogs
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Process Blogs
+      - name: process blogs
+        run: |
+          cd build
+
+      # Process Classes
+      - name: process classes
+        run:
+
+      # Commits if anything new was changed
+      - name: commit
+        run: |
+          git config --local user.name  ${{ github.actor }}        
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git commit -m "process classes and blogs and commit changes"
+      # Commits if anything new was changed
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true

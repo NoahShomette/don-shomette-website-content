@@ -1,286 +1,193 @@
-﻿{
+{
   "config": {
     "version": 1
   },
   "blogs": [
     {
-      "title": "Always Opportunity First!",
-      "link": "always_opportunity_first",
-      "date": "2022-06-06T12:00:00-0500",
-      "author": "",
-      "photoLink": "/images/blog/always-opportunity-first.jpg",
-      "description": "For a school attack to take place three elements must be present at the same time. If any one of these elements are not present, violence will not occur. If all three of these elements are present simultaneously the crime, violence, or attack will happen.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Locked Doors Save Lives",
-      "link": "locked_doors_save_lives",
-      "date": "2022-06-13T16:00:12-0500",
-      "author": "",
-      "photoLink": "/images/blog/locked-doors-save-lives.jpg",
-      "description": "On June 9,2022, a man tried to enter Walnut Park Elementary School in Gadsden, Alabama. He tried at least two doors but couldn’t get in.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Do Metal Detectors Work",
-      "link": "do_metal_detectors_work",
-      "date": "2022-06-16T01:06:02.000Z",
-      "author": "",
-      "photoLink": "/images/blog/do-metal-detectors-work.jpg",
-      "description": "If you want to make your school safer you must have multiple safety layers and filters.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "The Two Types of Safety",
-      "link": "the_two_types_of_safety",
-      "date": "2022-06-21T01:06:02.000Z",
-      "author": "",
-      "photoLink": "/images/blog/two-types-of-school-safety.jpg",
-      "description": "There are only two types of safety—mechanical and human (people). Doors, cameras, gates, and locks are mechanical safety. Your policies, procedures, and practices are people safety.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Man Shot and Killed at Summer Camp",
-      "link": "man_shot_and_killed_at_summer_camp",
-      "date": "2022-06-25T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/summer-camp.jpg",
-      "description": "On June 13, 2022, at approximately 8:43 am, a man entered through the main doors of the Duncanville Fieldhouse, a sportscomplex in Duncanville, Texas that is used as a summer camp for children. On any given day, there can be as many as150-250 students present.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Tips for Identifying Potential Threats",
-      "link": "tips_for_identifying_potential_threats",
-      "date": "2022-07-11T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/tips-for-identifying-potential-threats.jpg",
-      "description": "The greatest safety asset a school has is a vigilant, caring, and prepared adult. Cameras are great, locks are vital, but people are the prize…but only if they are prepared and know when to act.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Creating Teacher Safety Teams",
-      "link": "creating_teacher_safety_methods",
-      "date": "2022-07-13T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/creating-teacher-safety-teams.jpg",
-      "description": "“If you want to go fast, go alone. If you want to go far, go together.”",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Texas House of Representatives Uvalde Report",
-      "link": "texas_house_of_representatives_uvalde_report",
-      "date": "2022-08-01T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/Texas-House-of-Representatives-Ulvade-Official-Report.jpg",
-      "description": "The Texas House of Representatives just released their fact-finding report. It’s approximately 82 pages and focuses on what could and should have been done better by both Uvalde school district, Uvalde School Police Department, and others who responded to Robb Elementary that tragic day.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
       "title": "3 Ways to Make Your School Year Safer",
-      "link": "3_ways_to_make_your_school_year_safer",
       "date": "2022-08-29T19:06:38.000Z",
-      "author": "",
       "photoLink": "/images/blog/3-ways-to-make-your-school-year-safer.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "link": "3-ways-to-make-your-school-year-safer"
     },
     {
-      "title": "Goals and Guardrails: 4 Points of Contact During Morning Arrival",
-      "link": "goals_and_guardrails",
-      "date": "2022-08-31T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/goals-and-guardrails-4-points-of-contact-during-morning-arrival.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "title": "Always Opportunity First!",
+      "date": "2022-06-06T12:00:00-0500",
+      "photoLink": "/images/blog/always-opportunity-first.jpg",
+      "link": "always-opportunity-first"
     },
     {
-      "title": "Q&A: A Lockdown Question for Schools in Close Proximity",
-      "link": "q_and_a_a_lockdown_question_for_schools_in_close_proximity",
-      "date": "2022-09-06T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/questions.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "What to do During a Lockdown",
-      "link": "what_to_do_during_a_lockdown",
-      "date": "2022-09-08T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/what-to-do-during-a-lockdown.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "School Safety Tools: Speeding Up Lockdowns",
-      "link": "school_safety_tools_speeding_up_lockdowns",
-      "date": "2022-09-12T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/school-safety-tool-lockdown-control-feature-blog.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Q&A: Do I Open the Door to Grab Students During a Lockdown?",
-      "link": "q_and_a_do_i_open_the_door_to_grab_students_during_a_lockdown",
-      "date": "2022-09-14T19:06:38.000Z",
-      "author": "",
-      "photoLink": "/images/blog/classroom-door.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Q&A: Is it Safe to Identify Hide Locations?",
-      "link": "q_and_a_is_it_safe_to_identify_hide_locations",
-      "date": "2022-09-20T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/Is-it-Safe-to-Identify-Hide-Locations.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Q&A: Are Bulletproof Shields in Backpacks a Good Idea?",
-      "link": "q_and_a_are_bulletproof_shields_in_backpacks_a_good_idea",
-      "date": "2022-10-03T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/Bullet-Proof-Shields.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "The Key to Saving Lives During a School Attack",
-      "link": "key_to_saving_lives_during_a_school_shooting",
-      "date": "2022-10-18T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/key-to-saving-lives-during-school-attack.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Who Can Call A Lockdown?",
-      "link": "q_and_a_who_can_call_a_lockdown",
-      "date": "2022-10-20T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/who-can-call-a-lockdown.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "School Attack - St Louis Missouri. 24 October 2022",
-      "link": "school_shooting_st_louis_24_october_2022",
-      "date": "2022-10-25T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/st-louis-school-shooting.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Teacher Flees School",
-      "link": "teacher_flees_school",
-      "date": "2022-11-09T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/teacher-flees.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "School Safety Tools: Recess Procedures",
-      "link": "school_safety_tools_recess_procedures",
-      "date": "2022-11-14T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/recess-procedures.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
-    },
-    {
-      "title": "Own the Door—Own the Students!",
-      "link": "own_the_door",
-      "date": "2023-01-24T00:00:00-04:00",
-      "author": "",
-      "photoLink": "/images/blog/classroom-door-school.jpg",
-      "description": "Short two sentences on blog. Shows a very brief description of what to expect",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "title": "Before You Were Famouse",
+      "date": "2023-04-15T14:18:16.000Z",
+      "photoLink": "/images/blog/famous.jpg",
+      "link": "before-you-were-famouse"
     },
     {
       "title": "Chain of Violence",
-      "link": "chain_of_violence",
       "date": "2023-01-26T14:18:16.000Z",
-      "author": "",
       "photoLink": "/images/blog/chain-of-violence.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "link": "chain-of-violence"
     },
     {
       "title": "Count to a Perfect 7 Second Lockdown",
-      "link": "count_to_a_perfect_lockdown",
       "date": "2023-02-01T14:18:16.000Z",
-      "author": "",
       "photoLink": "/images/blog/stop-watch-7-seconds.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "link": "count-to-a-perfect-7-second-lockdown"
     },
     {
-      "title": "What do we do when Students are Outside and a Building goes into Lockdown",
-      "link": "q_and_a_what_do_we_do_when_students_are_outside_and_a_building_goes_into_lockdown",
-      "date": "2023-02-15T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/space-and-separation.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "title": "Creating Teacher Safety Teams",
+      "date": "2022-07-13T19:06:38.000Z",
+      "photoLink": "/images/blog/creating-teacher-safety-teams.jpg",
+      "link": "creating-teacher-safety-teams"
     },
     {
-      "title": "Listen Until the End",
-      "link": "listen_until_the_end",
-      "date": "2023-03-01T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/listen-until-the-end.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "title": "Do Metal Detectors Work",
+      "date": "2022-06-16T01:06:02.000Z",
+      "photoLink": "/images/blog/do-metal-detectors-work.jpg",
+      "link": "do-metal-detectors-work"
+    },
+    {
+      "title": "Goals and Guardrails: 4 Points of Contact During Morning Arrival",
+      "date": "2022-08-31T19:06:38.000Z",
+      "photoLink": "/images/blog/goals-and-guardrails-4-points-of-contact-during-morning-arrival.jpg",
+      "link": "goals-and-guardrails-4-points-of-contact-during-morning-arrival"
+    },
+    {
+      "title": "The Key to Saving Lives During a School Attack",
+      "date": "2022-10-18T14:18:16.000Z",
+      "photoLink": "/images/blog/key-to-saving-lives-during-school-attack.jpg",
+      "link": "the-key-to-saving-lives-during-a-school-attack"
     },
     {
       "title": "Labels and Student Safety Assessments",
-      "link": "labels_and_student_safety_assessments",
       "date": "2023-03-15T14:18:16.000Z",
-      "author": "",
       "photoLink": "/images/blog/boy-sad-student.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "link": "labels-and-student-safety-assessments"
     },
     {
-      "title": "School Safety Alert: Michigan State University: Feb 13, 2023",
-      "link": "school_safety_alert_michigan_state_university",
-      "date": "2023-04-01T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/michigan-state-university.jpg",
-      "description": "NEEDS A DESCRIPTION",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "title": "Locked Doors Save Lives",
+      "date": "2022-06-13T16:00:12-0500",
+      "photoLink": "/images/blog/locked-doors-save-lives.jpg",
+      "link": "locked-doors-save-lives"
     },
     {
-      "title": "Before You Were Famous",
-      "link": "before_you_were_famous",
-      "date": "2023-04-15T14:18:16.000Z",
-      "author": "",
-      "photoLink": "/images/blog/famous.jpg",
-      "description": "Every famous person was taught and raised by someone who wasn't famous. Be that teacher.",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "title": "Listen Until the End",
+      "date": "2023-03-01T14:18:16.000Z",
+      "photoLink": "/images/blog/listen-until-the-end.jpg",
+      "link": "listen-until-the-end"
     },
     {
       "title": "Make it Easy for Parents to Help",
-      "link": "make_it_easy_for_parents_to_help",
       "date": "2023-05-01T14:18:16.000Z",
-      "author": "",
       "photoLink": "/images/blog/dad-and-son.jpg",
-      "description": "Parents can be your greatest ally in discovering threats and acting on them",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "link": "make-it-easy-for-parents-to-help"
+    },
+    {
+      "title": "Man Shot and Killed at Summer Camp",
+      "date": "2022-06-25T19:06:38.000Z",
+      "photoLink": "/images/blog/summer-camp.jpg",
+      "link": "man-shot-and-killed-at-summer-camp"
+    },
+    {
+      "title": "Own the Door—Own the Students!",
+      "date": "2023-01-24T04:00:00.000Z",
+      "photoLink": "/images/blog/classroom-door-school.jpg",
+      "link": "own-the-door-own-the-students"
+    },
+    {
+      "title": "Q&A: A Lockdown Question for Schools in Close Proximity",
+      "date": "2022-09-06T19:06:38.000Z",
+      "photoLink": "/images/blog/questions.jpg",
+      "link": "q-a-a-lockdown-question-for-schools-in-close-proximity"
+    },
+    {
+      "title": "Q&A: Are Bulletproof Shields in Backpacks a Good Idea?",
+      "date": "2022-10-03T14:18:16.000Z",
+      "photoLink": "/images/blog/Bullet-Proof-Shields.jpg",
+      "link": "q-a-are-bulletproof-shields-in-backpacks-a-good-idea"
+    },
+    {
+      "title": "Q&A: Do I Open the Door to Grab Students During a Lockdown?",
+      "date": "2022-09-14T19:06:38.000Z",
+      "photoLink": "/images/blog/classroom-door.jpg",
+      "link": "q-a-do-i-open-the-door-to-grab-students-during-a-lockdown"
+    },
+    {
+      "title": "Q&A: Is it Safe to Identify Hide Locations?",
+      "date": "2022-09-20T14:18:16.000Z",
+      "photoLink": "/images/blog/Is-it-Safe-to-Identify-Hide-Locations.jpg",
+      "link": "q-a-is-it-safe-to-identify-hide-locations"
+    },
+    {
+      "title": "Q&A: What do we do when Students are Outside and a Building goes into Lockdown",
+      "date": "2023-02-15T14:18:16.000Z",
+      "photoLink": "/images/blog/space-and-separation.jpg",
+      "link": "q-a-what-do-we-do-when-students-are-outside-and-a-building-goes-into-lockdown"
+    },
+    {
+      "title": "Q&A: Who Can Call A Lockdown?",
+      "date": "2022-10-20T14:18:16.000Z",
+      "photoLink": "/images/blog/who-can-call-a-lockdown.jpg",
+      "link": "q-a-who-can-call-a-lockdown"
     },
     {
       "title": "School Safety Alert: Covenant School Attack",
-      "link": "school_safety_alert_covenant_school_attack",
       "date": "2023-05-01T14:18:16.000Z",
-      "author": "",
       "photoLink": "/images/blog/covenant-school-attack.jpg",
-      "description": "Immediate lessons learned from the Covenant School Attack on March 27, 2023",
-      "tags": ["Police", "Long Tag Testing", "Teachers", "Principals"]
+      "link": "school-safety-alert-covenant-school-attack"
+    },
+    {
+      "title": "School Safety Alert: Michigan State University: Feb 13, 2023",
+      "date": "2023-04-01T14:18:16.000Z",
+      "photoLink": "/images/blog/michigan-state-university.jpg",
+      "link": "school-safety-alert-michigan-state-university-feb-13-2023"
+    },
+    {
+      "title": "School Safety Tools: Recess Procedures",
+      "date": "2022-11-14T14:18:16.000Z",
+      "photoLink": "/images/blog/recess-procedures.jpg",
+      "link": "school-safety-tools-recess-procedures"
+    },
+    {
+      "title": "School Safety Tools: Speeding Up Lockdowns",
+      "date": "2022-09-12T19:06:38.000Z",
+      "photoLink": "/images/blog/school-safety-tool-lockdown-control-feature-blog.jpg",
+      "link": "school-safety-tools-speeding-up-lockdowns"
+    },
+    {
+      "title": "School Attack - St Louis Missouri. 24 October 2022",
+      "date": "2022-10-25T14:18:16.000Z",
+      "photoLink": "/images/blog/st-louis-school-shooting.jpg",
+      "link": "school-attack-st-louis-missouri-24-october-2022"
+    },
+    {
+      "title": "Teacher Flees School",
+      "date": "2022-11-09T14:18:16.000Z",
+      "photoLink": "/images/blog/teacher-flees.jpg",
+      "link": "teacher-flees-school"
+    },
+    {
+      "title": "Texas House of Representatives Uvalde Report",
+      "date": "2022-08-01T19:06:38.000Z",
+      "photoLink": "/images/blog/Texas-House-of-Representatives-Ulvade-Official-Report.jpg",
+      "link": "texas-house-of-representatives-uvalde-report"
+    },
+    {
+      "title": "The Two Types of Safety",
+      "date": "2022-06-21T01:06:02.000Z",
+      "photoLink": "/images/blog/two-types-of-school-safety.jpg",
+      "link": "the-two-types-of-safety"
+    },
+    {
+      "title": "Tips for Identifying Potential Threats",
+      "date": "2022-07-11T19:06:38.000Z",
+      "photoLink": "/images/blog/tips-for-identifying-potential-threats.jpg",
+      "link": "tips-for-identifying-potential-threats"
+    },
+    {
+      "title": "What to do During a Lockdown",
+      "date": "2022-09-08T19:06:38.000Z",
+      "photoLink": "/images/blog/what-to-do-during-a-lockdown.jpg",
+      "link": "what-to-do-during-a-lockdown"
     }
   ]
 }
