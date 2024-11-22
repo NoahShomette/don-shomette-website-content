@@ -29,7 +29,7 @@ jobs:
           git config --local user.name  ${{ github.actor }}        
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git add -A .
-          git commit -m "process classes and blogs and commit changes"
+          git commit -m "Process classes and blogs and commit changes"
       # Commits if anything new was changed
       - name: Push Changes
         uses: ad-m/github-push-action@master
