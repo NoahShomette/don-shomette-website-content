@@ -15,8 +15,8 @@ jobs:
       # Process Blogs
       - name: process blogs
         run: |
-          node install js-yaml
-          node install gray-matter
+          npm install js-yaml
+          npm install gray-matter
           node build/blogAction.js
 
       # Process Classes
