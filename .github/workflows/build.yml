@@ -15,7 +15,7 @@ jobs:
       # Process Blogs
       - name: process blogs
         run: |
-          cd build
+          node build/blogAction.js
 
       # Process Classes
       - name: process classes
