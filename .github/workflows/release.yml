@@ -1,4 +1,4 @@
-name: Process Content
+name: Release
 on:
   workflow_dispatch:
 concurrency:
