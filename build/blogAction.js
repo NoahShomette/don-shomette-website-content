@@ -54,7 +54,7 @@ blogFolder.forEach(function (folder, index) {
             blogsJsonListing.link = blogLinkName(frontmatter.title);
             goalFolderPath = path.join("blogs/", blogsJsonListing.link)
             // Write the rendered content to a html file
-            try { fs.writeFileSync(path.join(folderPath, "blogContent.html"), md.render(parsedFile.content)) }
+            try { fs.writeFileSync(path.join(folderPath, "blogContent.html"), md.render(parsedFile.content), { flag: 'w' }) }
             catch (err) {
                 console.error("failed to write rendered blog to file", err);
                 process.exit(1);
@@ -89,7 +89,7 @@ foldersNeedingRenamed.folders.forEach(function (folderInfo, index) {
     });
 });
 
-try { fs.writeFileSync("blogs.json", JSON.stringify(blogsJson)) }
+try { fs.writeFileSync("blogs.json", JSON.stringify(blogsJson), { flag: 'w' }) }
 catch (err) {
     console.error("failed to write blogs.json", err);
     process.exit(1);

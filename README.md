@@ -17,5 +17,5 @@ Each class is added to a folder inside the year that it is scheduled in. The act
 
 ## Todo
 
-- Add simple hash verification to blogAction and classAction to avoid adding commits that don't actually change anything
+- Add simple hash verification to blogAction and classAction to avoid adding commits that don't actually change anything (Unsure but fs.writeFileSync already seems to be verifying that they are changed before it does it)
 - Make classes action
