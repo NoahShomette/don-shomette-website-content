@@ -15,7 +15,8 @@ Composed of separate steps
 
 Each class is added to a folder inside the year that it is scheduled in. The action will iterate through every single folder inside the year and will rename files/folders so that they are standardized and pull needed info out into a classes.json.
 
+Because old classes arent usable it wont be a critical fail if any information from the json is missing that is needed for the actual class registration page IF THE CLASS IS IN THE PAST. Its only a critical fail if we dont have all the info for a class in the future or for the actual class listing. EMIT WARNINGS FOR ONES THAT ARENT CRITICAL FAILS
+
 ## Todo
 
-- Add simple hash verification to blogAction and classAction to avoid adding commits that don't actually change anything (Unsure but fs.writeFileSync already seems to be verifying that they are changed before it does it)
 - Make classes action

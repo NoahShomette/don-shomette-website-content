@@ -59,6 +59,14 @@ blogFolder.forEach(function (folder, index) {
                 console.error("failed to write rendered blog to file", err);
                 process.exit(1);
             }
+
+            if (file != blogsJsonListing.link) {
+                try { fs.renameSync(actualFilePath, path.join(goalFolderPath, blogsJsonListing.link + ".md")) }
+                catch (err) {
+                    console.error("failed to rename md file rendered blog to file", err);
+                    process.exit(1);
+                }
+            }
         };
         // If its an image then its our blog photos
         if (fileEnding === "png" || fileEnding === "jpg" || fileEnding === "jpeg" || fileEnding === "webp") {

@@ -25,6 +25,7 @@ jobs:
       # Process Classes
       - name: Process classes
         run: |
+          node build/classAction.js
 
       # Commits if anything new was changed
       - name: Commit
