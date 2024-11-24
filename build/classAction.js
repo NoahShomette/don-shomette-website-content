@@ -143,6 +143,7 @@ classesFolder.forEach(function (folder, index) {
                     process.exit(1);
                 }
             }
+            sortByMonth(yearJson.months);
             // Here we need to write the yearJson out to its `year-classes.json` file
             try { fs.writeFileSync(folder + "-classes.json", JSON.stringify(yearJson), { flag: 'w' }) }
             catch (err) {
@@ -183,4 +184,13 @@ function verifyClassPropery(file, verifyProp) {
         console.error("Listing for class did not include all required fields - Missing field: ", verifyProp);
         process.exit(1);
     }
+}
+
+function sortByMonth(arr) {
+    var months = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    arr.sort(function (a, b) {
+        return months.indexOf(a.month)
+            - months.indexOf(b.month);
+    });
 }
