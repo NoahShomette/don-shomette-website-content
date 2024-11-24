@@ -1,1 +1,34 @@
-{"classes":[{"month":"January","classes":[{"class_name":"Safe & Loved","state":"New York","public":false,"starting_date":"2024-01-25T20:42:41.000Z","display_date":"25","link":"25-January-2024-safe-and-loved-westfield-new-york","city":"Westfield","class_subtitle":"School Safety Team Presentation"}]},{"month":"October","classes":[{"class_name":"Spotting & Stopping the School Shooter","state":"New York","public":true,"starting_date":"2024-10-07T20:42:41.000Z","display_date":"7","link":"7-October-2024-spotting-and-stopping-the-school-shooter-erie-new-york","city":"Erie","class_subtitle":"Hard Lessons Learned from Apalachee High School"}]}]}
+{
+    "months": [
+        {
+            "month": "January",
+            "classes": [
+                {
+                    "class_name": "Safe & Loved",
+                    "state": "New York",
+                    "public": false,
+                    "starting_date": "2024-01-25T20:42:41.000Z",
+                    "display_date": "25",
+                    "link": "25-January-2024-safe-and-loved-westfield-new-york",
+                    "city": "Westfield",
+                    "class_subtitle": "School Safety Team Presentation"
+                }
+            ]
+        },
+        {
+            "month": "October",
+            "classes": [
+                {
+                    "class_name": "Spotting & Stopping the School Shooter",
+                    "state": "New York",
+                    "public": true,
+                    "starting_date": "2024-10-07T20:42:41.000Z",
+                    "display_date": "7",
+                    "link": "7-October-2024-spotting-and-stopping-the-school-shooter-erie-new-york",
+                    "city": "Erie",
+                    "class_subtitle": "Hard Lessons Learned from Apalachee High School"
+                }
+            ]
+        }
+    ]
+}

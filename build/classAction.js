@@ -111,7 +111,7 @@ classesFolder.forEach(function (folder, index) {
                 let monthAlreadyExists = false;
                 yearJson.classes.forEach(function (month, index) {
                     if (month.month === file.month) {
-                        month.classes.push(classJsonListing);
+                        month.months.push(classJsonListing);
                         monthAlreadyExists = true;
                     }
                 });
