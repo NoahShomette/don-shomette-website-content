@@ -143,13 +143,14 @@ classesFolder.forEach(function (folder, index) {
                     process.exit(1);
                 }
             }
-            sortByMonth(yearJson.months);
-            // Here we need to write the yearJson out to its `year-classes.json` file
-            try { fs.writeFileSync(folder + "-classes.json", JSON.stringify(yearJson), { flag: 'w' }) }
-            catch (err) {
-                console.error("failed to write year-classes.json", err);
-                process.exit(1);
-            }
+        }
+
+        sortByMonth(yearJson.months);
+        // Here we need to write the yearJson out to its `year-classes.json` file
+        try { fs.writeFileSync(folder + "-classes.json", JSON.stringify(yearJson), { flag: 'w' }) }
+        catch (err) {
+            console.error("failed to write year-classes.json", err);
+            process.exit(1);
         }
 
         if (classFolderPath != goalClassPath) {
