@@ -34,8 +34,8 @@ blogFolder.forEach(function (folder, index) {
     let blogsJsonListing = {};
     let goalFolderPath;
     let photoFile;
-    blogFolderFiles.forEach(function (file, index) {
-        let actualFilePath = path.join(folderPath, file);
+    blogFolderFiles.forEach(function (fileName, index) {
+        let actualFilePath = path.join(folderPath, fileName);
         let fileEnding = getFileEnding(actualFilePath);
         console.log(actualFilePath);
         // If its the markdown file then parse it and get the info it needs as well as render the html
@@ -60,8 +60,8 @@ blogFolder.forEach(function (folder, index) {
                 process.exit(1);
             }
 
-            if (file != blogsJsonListing.link) {
-                try { fs.renameSync(actualFilePath, path.join(goalFolderPath, blogsJsonListing.link + ".md")) }
+            if (fileName != blogsJsonListing.link) {
+                try { fs.renameSync(actualFilePath, path.join(folderPath, blogsJsonListing.link + ".md")) }
                 catch (err) {
                     console.error("failed to rename md file rendered blog to file", err);
                     process.exit(1);
@@ -70,7 +70,7 @@ blogFolder.forEach(function (folder, index) {
         };
         // If its an image then its our blog photos
         if (fileEnding === "png" || fileEnding === "jpg" || fileEnding === "jpeg" || fileEnding === "webp") {
-            photoFile = file;
+            photoFile = fileName;
         }
     });
     if (photoFile != null && goalFolderPath != null) {
