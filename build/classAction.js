@@ -23,7 +23,7 @@ classesFolder.forEach(function (folder, index) {
     /**
      * The year json which contains the meta information for the classes within that year
      */
-    var yearJson = { "classes": [] };
+    var yearJson = { "months": [] };
     var foldersNeedingRenamed = { "folders": [] };
 
     let yearFolderPath = path.join("classes/", folder);
@@ -75,8 +75,8 @@ classesFolder.forEach(function (folder, index) {
                 verifyClassPropery(file, "year");
 
                 // if the class starting date is before the current date or the folder is less than the current year ignore verifying fields that are needed for registration pages.
-                // Old registration pages are closed and therefore shouldnt ever be available
-                if (new Date(file.starting_date) >= new Date() || folder > new Date().getFullYear()) {
+                // Old registration pages are closed and therefore shouldnt ever be available. Pages with custom registration links wont be generated and therefore dont need this info
+                if ((new Date(file.starting_date) >= new Date() || folder > new Date().getFullYear()) && !file.hasOwnProperty("registration_link")) {
                     verifyClassPropery(file, "fee");
                     verifyClassPropery(file, "form_id");
                     verifyClassPropery(file, "location_room");
@@ -101,6 +101,9 @@ classesFolder.forEach(function (folder, index) {
                 if (file.hasOwnProperty("class_subtitle")) {
                     classJsonListing.class_subtitle = file.class_subtitle;
                 }
+                if (file.hasOwnProperty("registration_link")) {
+                    classJsonListing.registration_link = file.registration_link;
+                }
                 verifyClassPropery(classJsonListing, "class_name");
                 verifyClassPropery(classJsonListing, "state");
                 verifyClassPropery(classJsonListing, "public");
@@ -109,14 +112,14 @@ classesFolder.forEach(function (folder, index) {
                 verifyClassPropery(classJsonListing, "link");
 
                 let monthAlreadyExists = false;
-                yearJson.classes.forEach(function (month, index) {
+                yearJson.months.forEach(function (month, index) {
                     if (month.month === file.month) {
-                        month.months.push(classJsonListing);
+                        month.classes.push(classJsonListing);
                         monthAlreadyExists = true;
                     }
                 });
                 if (!monthAlreadyExists) {
-                    yearJson.classes.push({ "month": file.month, "classes": [classJsonListing] })
+                    yearJson.months.push({ "month": file.month, "classes": [classJsonListing] })
                 }
 
                 if (fileName != classJsonListing.link + ".json") {
@@ -166,7 +169,7 @@ classesFolder.forEach(function (folder, index) {
 
 
 function classLinkName(classItem, month, year) {
-    return classItem.display_date.replace(/[, ]+/g, '-').toLowerCase() + "-" + month + "-" + year + "-" + classItem.class_name.replace(/\s+/g, '-').replace("&", "and").toLowerCase() + "-" + classItem.city.replace(/\s+/g, '-').toLowerCase() + "-" + classItem.state.replace(/\s+/g, '-').toLowerCase()
+    return month + "-" + classItem.display_date.replace(/[, ]+/g, '-').toLowerCase() + "-" + year + "-" + classItem.class_name.replace(/\s+/g, '-').replace("&", "and").toLowerCase() + "-" + classItem.city.replace(/\s+/g, '-').toLowerCase() + "-" + classItem.state.replace(/\s+/g, '-').toLowerCase()
 }
 
 function getFileEnding(filePath) {
