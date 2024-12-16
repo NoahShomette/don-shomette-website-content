@@ -74,7 +74,7 @@ blogFolder.forEach(function (folder, index) {
         }
     });
     if (photoFile != null && goalFolderPath != null) {
-        blogsJsonListing.photoLink = new URL("https://raw.githubusercontent.com/NoahShomette/don-shomette-website-content/release/" + goalFolderPath + photoFile).href;
+        blogsJsonListing.photoLink = new URL("https://raw.githubusercontent.com/NoahShomette/don-shomette-website-content/release/" + goalFolderPath + "/" + photoFile).href;
     }
     // After we've read all the files go ahead and do whatever we need to
     console.log(blogsJsonListing);
