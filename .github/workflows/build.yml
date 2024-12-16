@@ -38,10 +38,9 @@ jobs:
           git commit -m "Process classes and blogs and commit changes"
           echo "exitcode=$?" >> $GITHUB_OUTPUT
           exit "0"
-      # Commits if anything new was changed
+      # Pushes if anything new was changed
       - name: Push Changes
         uses: ad-m/github-push-action@master
-        if: ${{steps.commit.outcome == success()}}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
