@@ -1,5 +1,5 @@
 ---
-date: 2023-05-01T14:18:16.000Z
+date: 2023-05-02T14:18:16.000Z
 photoLink: "/images/blog/covenant-school-attack.jpg"
 title: "School Safety Alert: Covenant School Attack"
 ---
