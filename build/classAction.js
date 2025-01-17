@@ -149,6 +149,13 @@ classesFolder.forEach(function (folder, index) {
         }
 
         sortByMonth(yearJson.months);
+        yearJson.months.forEach(function (month, index) {
+            month.classes.forEach(function (clas, index) {
+                month.classes.sort(function (a, b) {
+                    return new Date(a.starting_date) - new Date(b.starting_date)
+                });
+            });
+        });
         // Here we need to write the yearJson out to its `year-classes.json` file
         try { fs.writeFileSync(folder + "-classes.json", JSON.stringify(yearJson), { flag: 'w' }) }
         catch (err) {
