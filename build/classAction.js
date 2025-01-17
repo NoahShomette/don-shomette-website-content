@@ -66,22 +66,25 @@ classesFolder.forEach(function (folder, index) {
 
                 }
                 file = JSON.parse(file);
-                verifyClassPropery(file, "class_name");
-                verifyClassPropery(file, "state");
-                verifyClassPropery(file, "public");
-                verifyClassPropery(file, "starting_date");
-                verifyClassPropery(file, "display_date");
-                verifyClassPropery(file, "month");
-                verifyClassPropery(file, "year");
+                verifyClassPropery(file, "class_name", actualFilePath);
+                verifyClassPropery(file, "state", actualFilePath);
+                verifyClassPropery(file, "public", actualFilePath);
+                verifyClassPropery(file, "starting_date", actualFilePath);
+                verifyClassPropery(file, "display_date", actualFilePath);
+                verifyClassPropery(file, "month", actualFilePath);
+                verifyClassPropery(file, "year", actualFilePath);
 
                 // if the class starting date is before the current date or the folder is less than the current year ignore verifying fields that are needed for registration pages.
-                // Old registration pages are closed and therefore shouldnt ever be available. Pages with custom registration links wont be generated and therefore dont need this info
-                if ((new Date(file.starting_date) >= new Date() || folder > new Date().getFullYear()) && !file.hasOwnProperty("registration_link")) {
-                    verifyClassPropery(file, "fee");
-                    verifyClassPropery(file, "form_id");
-                    verifyClassPropery(file, "location_room");
-                    verifyClassPropery(file, "location_address_line_1");
-                    verifyClassPropery(file, "location_address_line_2");
+                // EXCLUDING
+                // - Old registration pages are closed and therefore shouldnt ever be available.
+                // - Pages with custom registration links wont be generated and therefore dont need this info
+                // - Private classes are private and dont generate pages either and therefore dont need anything
+                if ((new Date(file.starting_date) >= new Date() || folder > new Date().getFullYear()) && !file.hasOwnProperty("registration_link") && !file.hasOwnProperty("public")) {
+                    verifyClassPropery(file, "fee", actualFilePath);
+                    verifyClassPropery(file, "form_id", actualFilePath);
+                    verifyClassPropery(file, "location_room", actualFilePath);
+                    verifyClassPropery(file, "location_address_line_1", actualFilePath);
+                    verifyClassPropery(file, "location_address_line_2", actualFilePath);
                 }
                 classJsonListing.class_name = file.class_name;
                 classJsonListing.state = file.state;
@@ -104,12 +107,12 @@ classesFolder.forEach(function (folder, index) {
                 if (file.hasOwnProperty("registration_link")) {
                     classJsonListing.registration_link = file.registration_link;
                 }
-                verifyClassPropery(classJsonListing, "class_name");
-                verifyClassPropery(classJsonListing, "state");
-                verifyClassPropery(classJsonListing, "public");
-                verifyClassPropery(classJsonListing, "starting_date");
-                verifyClassPropery(classJsonListing, "display_date");
-                verifyClassPropery(classJsonListing, "link");
+                verifyClassPropery(classJsonListing, "class_name", actualFilePath);
+                verifyClassPropery(classJsonListing, "state", actualFilePath);
+                verifyClassPropery(classJsonListing, "public", actualFilePath);
+                verifyClassPropery(classJsonListing, "starting_date", actualFilePath);
+                verifyClassPropery(classJsonListing, "display_date", actualFilePath);
+                verifyClassPropery(classJsonListing, "link", actualFilePath);
 
                 let monthAlreadyExists = false;
                 yearJson.months.forEach(function (month, index) {
@@ -171,7 +174,12 @@ classesFolder.forEach(function (folder, index) {
 
 
 function classLinkName(classItem, month, year) {
-    return month + "-" + classItem.display_date.replace(/[, ]+/g, '-').toLowerCase() + "-" + year + "-" + classItem.class_name.replace(/\s+/g, '-').replace("&", "and").toLowerCase() + "-" + classItem.city.replace(/\s+/g, '-').toLowerCase() + "-" + classItem.state.replace(/\s+/g, '-').toLowerCase()
+    let city = "";
+
+    if (classItem.hasOwnProperty("city")) {
+        city = "-" + classItem.city.replace(/\s+/g, '-').toLowerCase();
+    }
+    return month + "-" + classItem.display_date.replace(/[, ]+/g, '-').toLowerCase() + "-" + year + "-" + classItem.class_name.replace(/\s+/g, '-').replace("&", "and").toLowerCase() + city + "-" + classItem.state.replace(/\s+/g, '-').toLowerCase()
 }
 
 function getFileEnding(filePath) {
@@ -180,9 +188,9 @@ function getFileEnding(filePath) {
     return fileEnding
 }
 
-function verifyClassPropery(file, verifyProp) {
+function verifyClassPropery(file, verifyProp, filepath) {
     if (!file.hasOwnProperty(verifyProp)) {
-        console.error("Listing for class did not include all required fields - Missing field: ", verifyProp);
+        console.error("Listing for class did not include all required fields - Missing field: {" + verifyProp + "} for file: {" + filepath + "}");
         process.exit(1);
     }
 }
